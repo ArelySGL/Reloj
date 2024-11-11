@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Médico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Acceso Médico</h1>
+        <form id="doctorForm">
+            <label for="doctorId">ID del Médico (Cédula Profesional):</label>
+            <input type="text" id="doctorId" required>
+
+            <label for="patientId">ID de la Persona:</label>
+            <input type="text" id="patientId" required>
+
+            <button type="submit">Acceder</button>
+        </form>
+
+        <h2>Registro de Salud</h2>
+        <div id="patientRecord"></div>
+
+        <button onclick="window.location.href='index.html'">Volver al Inicio</button>
+    </div>
+
+    <script src="doctor.js"></script>
+</body>
+</html>
+

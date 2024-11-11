@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Médico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Médico</h1>
+        <form id="doctorRegisterForm">
+            <label for="doctorName">Nombre Completo:</label>
+            <input type="text" id="doctorName" required>
+
+            <label for="doctorLicense">Número de Cédula Profesional:</label>
+            <input type="text" id="doctorLicense" required>
+
+            <label for="university">Universidad de Estudio:</label>
+            <input type="text" id="university" required>
+
+            <label for="specialty">Especialidad:</label>
+            <input type="text" id="specialty" required>
+
+            <label for="contactInfo">Información de Contacto:</label>
+            <input type="text" id="contactInfo" required>
+
+            <button type="submit">Registrar Médico</button>
+        </form>
+
+        <h2>Médicos Registrados</h2>
+        <ul id="doctorList">
+            <!-- Aquí se mostrarán los médicos registrados dinámicamente -->
+        </ul>
+
+        <button onclick="window.location.href='index.html'">Volver al Inicio</button>
+    </div>
+
+    <script src="registro_medico.js"></script>
+</body>
+</html>
+
